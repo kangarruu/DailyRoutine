@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Daily Routine</string>
+    <string name="brush_teeth">Brush Teeth</string>
+    <string name="get_dressed">Get Dressed</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="bracha">Bracha</string>
+    <string name="homework">Homework</string>
+    <string name="warning">Warning</string>
+    <string name="tidy">Tidy</string>
+    <string name="bedtime">Bedtime</string>
+    <string name="mitzvah">Mitzvah\!</string>
+    <string name="reset">RESET</string>
+    <string name="_0">0</string>
+
+
+</resources>

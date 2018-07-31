@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- I learned how to implement resources using the following tutorial https://medium.com/mindorks/mastering-android-themes-chapter-1-4aadfa750ca7. However the code is all my own.-->
+
+    <dimen name="button_top_margin">16dp</dimen>
+    <dimen name="button_left_margin">24dp</dimen>
+    <dimen name="button_right_margin">24dp</dimen>
+    <dimen name="reset_button_top_margin">14dp</dimen>
+    <dimen name="reset_button_bottom_margin">18dp</dimen>
+    <dimen name="reset_button_right_margin">100dp</dimen>
+    <dimen name="reset_button_left_margin">100dp</dimen>
+    <dimen name="score_text_size">120sp</dimen>
+
+</resources>

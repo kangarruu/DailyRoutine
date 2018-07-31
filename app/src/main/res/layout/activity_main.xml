@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="15">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha=".5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/noa" />
+
+
+            <TextView
+                android:id="@+id/noa_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/_0"
+                android:textColor="@color/score_text_color"
+                android:textSize="@dimen/score_text_size" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha=".5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gavi" />
+
+
+            <TextView
+                android:id="@+id/gavi_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/_0"
+                android:textColor="@color/score_text_color"
+                android:textSize="@dimen/score_text_size" />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_weight="85">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:layout_marginTop="@dimen/button_top_margin"
+                        android:onClick="incrementForNoa"
+                        android:text="@string/brush_teeth" />
+
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="incrementForNoa"
+                        android:text="@string/get_dressed" />
+
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="incrementForNoa"
+                        android:text="@string/breakfast" />
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="incrementForNoa"
+                        android:text="@string/bracha" />
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="incrementForNoa"
+                        android:text="@string/homework" />
+
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="plusTwoForNoa"
+                        android:text="@string/tidy" />
+
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="plusTwoForNoa"
+                        android:text="@string/bedtime" />
+
+                    <Button
+                        android:id="@+id/plus_button_noa"
+                        style="@style/ButtonStyle"
+                        android:onClick="decrementForNoa"
+                        android:text="@string/warning" />
+
+                    <Button
+                        android:id="@+id/minus_button_noa"
+                        style="@style/ButtonStyle"
+                        android:onClick="plusTwoForNoa"
+                        android:text="@string/mitzvah" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:layout_marginTop="@dimen/button_top_margin"
+                        android:onClick="incrementForGavi"
+                        android:text="@string/brush_teeth" />
+
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="incrementForGavi"
+                        android:text="@string/get_dressed" />
+
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="incrementForGavi"
+                        android:text="@string/breakfast" />
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="incrementForGavi"
+                        android:text="@string/bracha" />
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="incrementForGavi"
+                        android:text="@string/homework" />
+
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="plusTwoForGavi"
+                        android:text="@string/tidy" />
+
+
+                    <Button
+                        style="@style/ButtonStyle"
+                        android:onClick="plusTwoForGavi"
+                        android:text="@string/bedtime" />
+
+                    <Button
+                        android:id="@+id/minus_button_gavi"
+                        style="@style/ButtonStyle"
+                        android:onClick="decrementForGavi"
+                        android:text="@string/warning" />
+
+                    <Button
+                        android:id="@+id/plus_button_gavi"
+                        style="@style/ButtonStyle"
+                        android:onClick="plusTwoForGavi"
+                        android:text="@string/mitzvah" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                style="@style/ResetButtonStyle"
+                android:onClick="resetScores"
+                android:text="@string/reset" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
